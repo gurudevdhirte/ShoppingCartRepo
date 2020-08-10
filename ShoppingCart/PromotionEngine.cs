@@ -8,7 +8,7 @@ namespace ShoppingCart
 {
     public class PromotionEngine
     {
-        public void Promote(ShoppingCart cart)
+        public int Promote(ShoppingCart cart)
         {
             int price = 0;
             int discount = 0;
@@ -59,6 +59,8 @@ namespace ShoppingCart
 
             Console.WriteLine("Total " + Convert.ToString(totalPrice));
             Console.WriteLine();
+
+            return totalPrice;
         }
     }
 }
